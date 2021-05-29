@@ -1,1 +1,3 @@
-fetch("https://reqres.in/api/Users").then((res) => console.log(res));
+fetch("https://reqres.in/api/Users")
+  .then((res) => res.json())
+  .then((data) => console.log(data));
